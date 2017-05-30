@@ -1,0 +1,32 @@
+{
+  "name": "public-definition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrieforde/public-definition.git"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "autoprefixer": "latest",
+    "bourbon": "latest",
+    "bourbon-neat": "latest",
+    "css-mqpacker": "latest",
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-cssnano": "latest",
+    "grunt-postcss": "latest",
+    "grunt-sass": "latest",
+    "grunt-wp-i18n": "latest",
+    "grunt-wp-readme-to-markdown": "latest",
+    "sanitize.scss": "^1.0.0",
+    "sass-lint": "latest"
+  }
+}
