@@ -13,9 +13,9 @@ add_action( 'wp_enqueue_scripts', 'pd_enqueue_scripts', 15 );
  */
 function pd_enqueue_scripts() {
 
-	$google_fonts = '//fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,400i,700,700i';
+	$google_fonts = '//fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:300,300i,600,600i';
 	$google_fonts = str_replace( ',', '%2C', $google_fonts );
-	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$min          = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '': '.min';
 
 	// Google fonts.
 	wp_enqueue_style(
