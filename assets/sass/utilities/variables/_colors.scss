@@ -4,10 +4,27 @@
 
 
 $theme-colors: (
-	'mike-blue': #1c347d,
-	'camel': #c7a26c,
-	'black': #221f20,
-	'chicago': #5d5d5d,
-	'alumninum': #939597,
-	'dark-gray': #a6a8ab,
+	mike-blue: #1c347d,
+	camel: #c7a26c,
+	black: #221f20,
+	chicago: #5d5d5d,
+	alumninum: #939597,
+	dark-gray: #a6a8ab,
 );
+
+
+//-----------------------------------------
+// Global Elements
+//-----------------------------------------
+$color__button-background: color(camel);
+$color__button-background-hover: shade(color(camel), 20%);
+
+
+//-----------------------------------------
+// Typography
+//-----------------------------------------
+$color__body-text: color(chicago);
+$color__heading-text: color(black);
+$color__link: color(mike-blue);
+$color__link-hover: rgba(color(mike-blue), 0.8);
+$color__link-visited: color(mike-blue);
