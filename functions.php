@@ -57,3 +57,5 @@ function pd_allow_svg_upload( $mimes ) {
 
 	return $mimes;
 }
+
+require_once PUBLIC_DEFINITION_PATH . '/inc/template-tags.php';
