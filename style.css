@@ -1,7 +1,7 @@
-/*!
+/*
 Theme Name: Public Definition
-Author: Carrie Forde, Braad Martin, Jordan Gonzales
-Description: A demo child theme for Alcatraz.
+Author: Carrie Forde
+Description: A child theme for Public Definition.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -316,8 +316,8 @@ button,
 input,
 select,
 textarea {
-  color: #000;
-  font: 400 1em/1.5 "Source Sans Pro", sans-serif;
+  color: #5d5d5d;
+  font: 400 1em/1.5 "Open Sans", sans-serif;
 }
 
 h1, .site-title, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .hfrom {
@@ -329,15 +329,17 @@ p {
 }
 
 a {
-  color: #0d8bb7;
+  color: #1c347d;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 a:visted {
-  color: #0b769c;
+  color: #1c347d;
 }
 
 a:hover, a:active {
-  color: #319cc2;
+  color: rgba(28, 52, 125, 0.8);
 }
 
 abbr[title] {
@@ -484,6 +486,10 @@ textarea {
   width: 100%;
 }
 
+select {
+  border: 1px solid #666;
+}
+
 .search-form {
   line-height: 1;
   position: relative;
@@ -553,6 +559,11 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.image-as-background {
+  background-size: cover;
+  background-position: center;
+}
+
 .gallery {
   margin-bottom: 1.5625rem;
   overflow: hidden;
@@ -581,6 +592,8 @@ img {
 embed,
 iframe,
 object {
+  height: 50vw;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -609,7 +622,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   padding: 0.625em 0.9375em;
-  background-color: #0d8bb7;
+  background-color: #c7a26c;
   color: #fff;
   display: inline-block;
   font-weight: 500;
@@ -635,7 +648,7 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: #319cc2;
+  background-color: #9f8256;
 }
 
 .alcatraz-sub-page-nav {
@@ -1056,7 +1069,6 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
 }
 
 .main-navigation {
-  background-color: #fff;
   display: none;
   padding: 1.25rem;
 }
@@ -1071,7 +1083,6 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #fff;
   z-index: 5;
 }
 
@@ -1090,7 +1101,6 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
 
 .mobile-nav-style-slide-left .main-navigation,
 .mobile-nav-style-slide-right .main-navigation {
-  background-color: #fff;
   display: block;
   max-width: 100%;
   overflow-y: scroll;
@@ -1114,12 +1124,12 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
 
 .mobile-nav-style-slide-left.menu-open .menu-screen,
 .mobile-nav-style-slide-right.menu-open .menu-screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(34, 31, 32, 0.7);
   z-index: 1;
 }
 
@@ -1347,6 +1357,11 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
   text-align: center;
 }
 
+h1, .site-title, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .hfrom {
+  color: #221f20;
+  font-family: "Montserrat", sans-serif;
+}
+
 @media only screen and (min-width: 25em) {
   .mobile-nav-style-slide-left.menu-open:not(.mobile-nav-toggle-style-hamburger) .mobile-menu-toggle {
     left: calc(400px - (200px + 1.25rem));
@@ -1507,7 +1522,6 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
     position: fixed;
     top: 0;
     bottom: 0;
-    background-color: #fff;
     -webkit-box-shadow: -1px 0 15px 0 rgba(0, 0, 0, 0.3);
     box-shadow: -1px 0 15px 0 rgba(0, 0, 0, 0.3);
     overflow-y: scroll;
