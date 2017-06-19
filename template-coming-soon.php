@@ -5,7 +5,7 @@
  * @package publicdefinition
  */
 
-get_header(); ?>
+get_header( 'coming-soon' ); ?>
 
 	<div id="primary" class="content-area">
 
