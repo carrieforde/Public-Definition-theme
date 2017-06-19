@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'image-as-background template-coming-soon' ); ?> <?php pd_post_thumbnail_as_background(); ?>>
 
 	<?php do_action( 'alcatraz_before' ); ?>
 
