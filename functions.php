@@ -41,3 +41,19 @@ function pd_enqueue_scripts() {
 		PUBLIC_DEFINITION_VERSION
 	);
 }
+
+add_filter( 'upload_mimes', 'pd_allow_svg_upload' );
+/**
+ * Allow SVG to be uploaded through media upload.
+ *
+ * @author  Carrie Forde
+ *
+ * @param   array  $mimes  The allowed mime types.
+ * @return  array  $mimes  The array of mime types.
+ */
+function pd_allow_svg_upload( $mimes ) {
+
+	$mimes['svg'] = 'image/svg+xml';
+
+	return $mimes;
+}
