@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: Public Definition
 Author: Carrie Forde
 Description: A child theme for Public Definition.
@@ -13,7 +13,7 @@ Tags:
 // Include Sass libraries.
 @import 'bourbon';
 @import 'alcatraz/assets/sass/utilities/index'; // Alcatraz's utilities.
-@import 'assets/sass/utilities/index'; // This theme's utilities.
+@import 'utilities/index'; // This theme's utilities.
 @import 'neat';
 @import 'sanitize';
 
@@ -21,3 +21,6 @@ Tags:
 @import 'alcatraz/assets/sass/base/index';
 @import 'alcatraz/assets/sass/modules/index';
 @import 'alcatraz/assets/sass/layout/index';
+
+@import 'base/index';
+@import 'views/index';
